@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,russian]{babel} % added russian
+\usepackage{tabularx}
+\usepackage{calc} % added
+\usepackage{ragged2e}
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Александр Нельзин} \\ \vspace{2pt}
+    \small +77073571374 $|$ \href{mailto:asnelzin@gmail.com}{\underline{asnelzin@gmail.com}} $|$
+    \href{https://linkedin.com/in/asnelzin}{\underline{linkedin.com/in/asnelzin}} $|$
+    \href{https://github.com/asnelzin}{\underline{github.com/asnelzin}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Опыт работы}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Engineer}{Ноябрь 2018 -- По настоящее время}
+      {Togezzer.net, Inc.}{Удаленно, США}
+      \resumeItemListStart
+        \resumeItem{Разрабатываю backend для инновационного продукта "digital workspace": платформа для коммуникации и управления задачами/проектами/процессами компаний}
+        \resumeItem{Занимаюсь, как продуктовыми, так и инфраструктурными задачами}
+        \resumeItem{С нуля разработал и подключил систему для управления платежами и подписками клиентов}
+      \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Разработчик}{Апрель 2018 -- Октябрь 2018}
+      {Mail.ru Group}{Санкт-Петербург, Россия}
+      \resumeItemListStart
+        \resumeItem{Учавствовал в разработке и запуске более 5 проектов с самого начала, включая обсуждение бизнес-гипотез и быстрое прототипирование для проверки их жизнеспособности}
+        \resumeItem{Подключал интеграции с другими проектами компании}
+        \resumeItem{Проводил code-review, учил писать тесты, участвовал в планировании и ретроспективах}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Backend Developer}{Июль 2017 -- Апрель 2018}
+      {ESforce Holding}{Санкт-Петербург, Россия}
+      \resumeItemListStart
+        \resumeItem{Участвовал в ранней стадии разработки микросервисного backend'а сервиса для видео-стриминга Looch.tv}
+        \resumeItem{С нуля разработал сервис для записи видео-потоков в реальном времени}
+        \resumeItem{Разрабатывал микросервисы с нуля, поддерживал имеющиеся: более 50к строк кода в git репозиторий}
+        \resumeItem{Писал unit- и integration-тесты}
+        \resumeItem{Профилировал программы и делал нагрузочные тесты}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Backend Developer}{Май 2016 -- Июнь 2017}
+      {SputnikMobile}{Санкт-Петербург, Россия}
+      \resumeItemListStart
+        \resumeItem{Разработка веб-сервисов для американсого рынка: в частности, сервиса для выявления основных моментов (highlights) на видео-записях коммандных игр (футбол, баскетбол, регби)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {QA Engineer}{Ноябрь 2014 -- Май 2016}
+      {Нетрика}{Санкт-Петербург, Россия}
+      \resumeItemListStart
+        \resumeItem{Ручное и автоматизированное тестирование}
+        \resumeItem{Написание и поддержка инструментов для тестирования}
+        \resumeItem{Настройка и поддержка CI/CD Jenkins}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern Python Developer}{Июль 2014 -- Август 2014}
+      {Нетрика}{Санкт-Петербург, Россия}
+      \resumeItemListStart
+        \resumeItem{Разработка и тестирование нескольких проектов на Django в составе команды разработчиков}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Высшее образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Университет ИТМО}{Санкт-Петербург, Россия}
+      {Бакалавр технических наук, специальность "Мехатроника и робототехника"}{Сентябрь 2011 -- Июль 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Технические навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Языки программирования}{: Go, Python, SQL} \\
+     \textbf{Фреймворки}{: aiohttp, Django, FastAPI} \\
+     \textbf{Базы данных}{: PostgreSQL, Redis, SQLite, BoltDB, MongoDB}\\
+     \textbf{Архитектура}{: REST, gRPC, ZeroMQ, Microservices}\\
+     \textbf{Распределенные системы}{: RabbitMQ, Apache Kafka}\\
+     \textbf{Инструменты разработки}{: Git, Makefile, Prometheus, Grafana, Loki, nginx} \\
+     \textbf{CI/CD, Cloud}{: GitLab CI/CD, Drone CI, Docker, Kubernetes, AWS}\\
+    }}
+ \end{itemize}
+
+
+%-----------LANGUAGES-----------
+\section{Знания языков}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Английский}{: Upper-intermediate (B2)} \\
+     \textbf{Русский}{: Родной}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
