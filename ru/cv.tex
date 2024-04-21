@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,russian]{babel} % added russian
+\usepackage{tabularx}
+\usepackage{calc} % added
+\usepackage{ragged2e}
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheadingLeftOneRow}[2]{% % added
+  \begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+  \end{description}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Aleksandr Nelzin} \\ \vspace{2pt}
+    \small +77073571374 $|$ \href{mailto:asnelzin@gmail.com}{\underline{asnelzin@gmail.com}} $|$
+    \href{https://linkedin.com/in/asnelzin}{\underline{linkedin.com/in/asnelzin}} $|$
+    \href{https://github.com/asnelzin}{\underline{github.com/asnelzin}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Senior Software Engineer}{November 2018 -- Present}
+      {Togezzer.net, Inc.}{Remote, USA}
+      \resumeItemListStart
+        \resumeItem{Handled both software engineering and infrastructure responsibilities, actively participated in creating product requirements and architecture.}
+        \resumeItem{Contributed to over 50 new product features, including core functionalities like tasks, projects, and more.}
+        \resumeItem{Optimized automated testing, reducing the overall quality assurance cycle time by 30\%.}
+        \resumeItem{Designed and implemented a new payment subsystem from scratch, integrating 2 payment providers, enabling seamless transactions for users.}
+        \resumeItem{Integrated over 5 third-party services in response to user feature requests.}
+        \resumeItem{Completely rewrote the authentication subsystem from legacy Tarantool database to PostgreSQL, leading to 20\% faster response times and 50\% faster development cycles.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Software Engineer}{April 2018 -- October 2018}
+      {Mail.ru Group}{Saint Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development and launch of over 5 new projects, including initial discussions on business requirements, architecture design, development, and testing.}
+        \resumeItem{Implemented over 3 integrations with other company projects, such as video calls, monitoring, and analytics.}
+        \resumeItem{Conducted code reviews and mentored junior developers, fostering a collaborative environment.}
+        \resumeItem{Participated in planning and retrospective meetings, helping improve team productivity by 20\%.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Software Engineer}{July 2017 -- April 2018}
+      {ESforce Holding}{Saint Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Participated in early-stage development of a microservices backend for the video streaming service Looch.tv, developing over 2 microservices from scratch and supporting 10 existing ones.}
+        \resumeItem{Developed a service for real-time video stream recording from scratch, enhancing user experience.}
+        \resumeItem{Created unit and integration tests to maintain code quality.}
+        \resumeItem{Performed program profiling and load testing to ensure system reliability and scalability.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Software Engineer}{May 2016 -- June 2017}
+      {SputnikMobile}{Saint Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Developed web services for the American market, specifically a service for identifying key moments in video recordings of team sports, including football, basketball, and rugby.}
+      \resumeItemListEnd
+
+  % \resumeSubheading
+  %     {QA Engineer}{November 2014 -- May 2016}
+  %     {Netrika}{Saint Petersburg, Russia}
+  %     \resumeItemListStart
+  %       \resumeItem{Performed both manual and automated testing, ensuring product quality.}
+  %       \resumeItem{Wrote and maintained testing tools for continuous integration/continuous deployment (CI/CD) using Jenkins.}
+  %       \resumeItem{Set up and maintained CI/CD pipelines, improving team efficiency.}
+  %     \resumeItemListEnd
+
+  % \resumeSubheading
+  %     {Intern Software Engineer}{July 2014 -- August 2014}
+  %     {Netrika}{Saint Petersburg, Russia}
+  %     \resumeItemListStart
+  %       \resumeItem{Participated in the development and testing of several projects using Django as part of a collaborative team of developers.}
+  %     \resumeItemListEnd
+
+  % \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ITMO University}{September 2011 -- July 2015}
+      {Bachelor of Science in Engineering, Specialization: Mechatronics and Robotics}{Saint Petersburg, Russia}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Go, Python, SQL} \\
+     \textbf{Frameworks}{: aiohttp, Django, FastAPI} \\
+     \textbf{Databases}{: PostgreSQL, Redis, SQLite, BoltDB, MongoDB}\\
+     \textbf{Architecture}{: REST, gRPC, Microservices}\\
+     \textbf{Distributed Systems}{: RabbitMQ, Apache Kafka}\\
+     \textbf{Development Tools}{: Git, Makefile, Prometheus, Grafana, Loki, nginx} \\
+     \textbf{CI/CD, Cloud}{: GitLab CI/CD, Drone CI, Docker, Kubernetes, AWS}\\
+    }}
+ \end{itemize}
+
+%-----------LANGUAGES-----------
+\section{Language Proficiency}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Upper-intermediate (B2)} \\
+     \textbf{Russian}{: Native}
+    }}
+ \end{itemize}
+
+\end{document}
